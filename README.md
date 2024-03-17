@@ -22,3 +22,4 @@ The home page includes a random word generator using HTML, CSS, and JavaScript.
 1. Register a new account.
 2. Login with your credentials.
 3. Explore the home page with the random word generator.
+
