@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: rgba(214, 171, 234, 0.927);
+    padding: 0;
+    margin: 0;
+}
+
+.containerr {
+    position: relative;
+    background: url('pics/image3.jpg') no-repeat;
+    background-size: cover;
+    height: 600px;
+    
+}
+
+.header {
+   background-color: black;
+   height: 50px;
+   box-shadow: 5px 10px 10px rgba(100, 40, 111, 0.75);
+   position: relative;
+   z-index: 1;
+   border: solid;
+   border-color: #110c0d;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   border-width: 1px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.header p {
+    padding-top: 15px;
+    padding-right: 10px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+    width :max-content;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+    backdrop-filter: blur(5px);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    animation-name: text;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes text {
+    from {
+        margin-top: 100px;
+    }
+
+    to {
+        margin-top: 50px;
+    }
+}
+
+.main {
+    padding-top: 10px;
+    position: relative;
+    z-index: 2;
+
+}
+
+img {
+    margin-left: 10px;
+    margin-top: 12px;
+    height: 25px;
+    width: 25px;
+}
+
+.generator {
+    margin-top: 50px; ;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    height:200px;
+    padding-top: 50px;
+    backdrop-filter: blur(5px);
+    border: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    box-shadow: 2px 2px 20px rgba(125, 77, 130, 0.75);
+}
+
+.btn {
+    margin-top: 20px;
+    
+}
+@keyframes buttonClickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.btn:active {
+    animation: buttonClickAnimation 0.2s ease-out;
+}
+
+@keyframes popAnimation {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Apply animation to the container */
+.texts.pop {
+    animation: popAnimation 0.5s ease-in-out;
+    display: block; /* Display the container when the animation starts */
+}
+.texts {
+    display: none;
+    border: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    animation: slideIn 0.5s ease-in-out;
+    margin-top: 20px;
+    background:rgba(175, 145, 180, 0.50);
+    box-shadow: 2px 2px 20px rgba(125, 77, 130, 0.75);
+}
+
+#word{
+    font-weight: bold;
+}
+
+#meaning{
+    font-style: italic;
+}
